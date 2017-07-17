@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tvsearch_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androsol.moviespot.Activities.TVSearchResultActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Search Results"
+        android:id="@+id/textSearchTV"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_of_results_tv"
+        android:layout_below="@+id/textSearchTV"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/no_of_results_tv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewForTVSearch"
+        ></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

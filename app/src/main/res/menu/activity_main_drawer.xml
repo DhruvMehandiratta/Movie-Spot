@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/movies"
+            android:title="Movies"
+            android:icon="@mipmap/icon_movies"/>
+        <item
+            android:id="@+id/tv"
+            android:title="TV shows"
+            android:icon="@mipmap/icon_tv"/>
+        <item
+            android:id="@+id/people"
+            android:title="Celebrities"
+            android:icon="@mipmap/icon_celeb"/>
+        <item
+            android:id="@+id/watchlist"
+            android:title="Watchlist"
+            android:icon="@mipmap/icon_watchlist"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:title="Contact Us"
+                android:icon="@mipmap/icon_contactus"/>
+        </menu>
+    </item>
+
+</menu>

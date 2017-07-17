@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/title_details_activity_strip"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_logo_final"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Genres: "
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_below="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/genre"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_below="@+id/genre"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runtime:   "
+        android:id="@+id/runtime"
+        android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/runtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/runtimeText"
+            />
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tagline:   "
+        android:id="@+id/tagline"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@+id/tagline"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/taglineText"
+        />
+
+    <TextView
+        android:layout_below="@+id/taglineText"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date:   "
+        android:id="@+id/release"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@+id/release"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/releaseDateText"
+        />
+
+    <TextView
+        android:layout_below="@+id/releaseDateText"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis:   "
+        android:id="@+id/synopsis"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@+id/synopsis"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/synopsisText"
+        />
+
+    <TextView
+        android:layout_below="@+id/synopsisText"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout"
+        android:text="If you like this movie, check out..."/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/checkout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/horizontal_list_for_fragment"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

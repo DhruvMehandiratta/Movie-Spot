@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_episode_no_text"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dot"
+            android:layout_toRightOf="@+id/tv_episode_no_text"
+            android:textSize="25dp"
+            android:text=".) "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/dot"
+            android:layout_height="30dp"
+            android:textStyle="italic|bold"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_episode_name"/>
+
+
+        <ImageView
+            android:layout_below="@+id/tv_episode_name"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_episode_image"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="air_date"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/tv_episode_image"
+            android:id="@+id/tv_episode_date"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vote_average"
+            android:layout_below="@id/tv_episode_date"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/tv_episode_vote_average"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_thumb_up_black_24dp"
+            android:layout_below="@+id/tv_episode_date"
+            android:layout_toRightOf="@id/tv_episode_vote_average"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tv_episode_thumbsup_image"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vote_count"
+            android:layout_below="@id/tv_episode_date"
+            android:layout_toRightOf="@id/tv_episode_thumbsup_image"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tv_episode_vote_count"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Overview: "
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@+id/tv_episode_vote_average"
+            android:id="@+id/tv_episode_overview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/tv_episode_overview_text"
+            android:layout_below="@+id/tv_episode_overview"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

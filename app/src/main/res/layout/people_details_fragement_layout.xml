@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/people_horizontal_list"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+        </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Birthday:  "
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_below="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bday"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_below="@+id/bday"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page:  "
+        android:id="@+id/p2"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hmpg"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Place:   "
+        android:id="@+id/p3"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@+id/p3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/place_birth"
+        />
+
+        <TextView
+            android:layout_below="@+id/place_birth"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popularity:   "
+            android:id="@+id/p4"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_below="@+id/p4"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/popularity_text"
+            />
+    <TextView
+        android:layout_below="@+id/popularity_text"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biography:   "
+        android:id="@+id/p5"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_below="@+id/p5"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/biography_text"
+        />
+
+</LinearLayout>
+    </android.support.v4.widget.NestedScrollView>

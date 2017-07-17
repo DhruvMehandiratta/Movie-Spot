@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/back_button"
+        android:title="Back"
+        android:icon="@mipmap/icon_left"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/set_as_wallpaper"
+        android:title="Set as Wallpaper"
+        android:icon="@mipmap/icon_wallpaper"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/i_like_this_image"
+        android:title="I Like this image"
+        android:icon="@mipmap/icon_download"
+        app:showAsAction="always"
+        />
+</menu>

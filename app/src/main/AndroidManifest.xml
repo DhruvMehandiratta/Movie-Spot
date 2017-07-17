@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androsol.moviespot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".BackgroundSoundService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Activities.TVActivity"
+            android:label="@string/title_activity_tv"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DisplayPhoto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.TVDetailsActivity"
+            android:label="@string/title_activity_tvdetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.SeasonActivity" />
+        <activity
+            android:name=".Activities.MovieSearchResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.TVSearchResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".People.CelebritiesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".People.PeopleSearchResultActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".People.PeopleDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.WatchlistActivity"
+            android:label="WatchList" />
+        <activity
+            android:name=".Activities.ContactUsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.TestActivity" />
+        <activity android:name=".Watchlist.WatchActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tv_nest_scroll_view"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.androsol.moviespot.Activities.TVDetailsActivity"
+    tools:showIn="@layout/activity_tvdetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_details_app_bar"
+        android:layout_height="match_parent">
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_details_viewpager"
+
+            >
+            <android.support.v4.view.PagerTitleStrip
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/tv_title_details_activity_strip"
+                android:textColor="@android:color/white"
+                android:layout_gravity="top"
+                android:background="@android:color/darker_gray"
+                >
+            </android.support.v4.view.PagerTitleStrip>
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
